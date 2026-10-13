@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>もぐら珈琲研究所｜地下で焙煎、朝いちばんに届くコーヒー豆の定期便</title>
+  <meta name="description" content="焙煎から48時間以内に発送する、コーヒー豆の定期便。※Claude Code のデモ用に作った架空のお店です。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="もぐら珈琲研究所（架空のお店のデモサイト）">
+  <meta property="og:description" content="地下で焙煎、朝いちばんに届く。Claude Code で作ったデモサイトです。実在の会社・お店とは関係ありません。">
+  <meta property="og:image" content="https://nc16152.github.io/mogura-coffee-lab/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-bar" role="note">
+  これは <strong>Claude Code</strong> のデモ用に作った<strong>架空のお店</strong>です。実在の会社・お店・商品とは関係ありません。
+</div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="もぐら珈琲研究所 トップへ">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="26" r="20" fill="#5B4A42"/>
+        <circle cx="17" cy="22" r="2.6" fill="#1E1512"/>
+        <circle cx="31" cy="22" r="2.6" fill="#1E1512"/>
+        <ellipse cx="24" cy="30" rx="7" ry="5.4" fill="#E89A9A"/>
+      </svg>
+      <span class="logo-text">もぐら珈琲研究所<small>MOGURA COFFEE LAB</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span><span class="sr-only">メニュー</span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#concept">こだわり</a>
+      <a href="#beans">豆のラインナップ</a>
+      <a href="#plan">定期便</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#shop">お店</a>
+      <a class="btn btn-small" href="#plan">定期便をはじめる</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">焙煎したての、コーヒー豆の定期便</p>
+        <h1><span class="nb">地下で焙煎、</span><br><span class="nb">朝いちばんに届く。</span></h1>
+        <p class="lead">もぐら珈琲研究所は、地下1階の小さな焙煎所。<br>焼いてから<strong>48時間以内</strong>に発送するので、袋を開けた瞬間の<span class="nb">香りがちがいます。</span></p>
+        <div class="hero-cta">
+          <a class="btn" href="#plan">月額をシミュレーション</a>
+          <a class="btn btn-ghost" href="#beans">豆を見てみる</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 360">
+          <defs>
+            <g id="bean">
+              <ellipse rx="9" ry="12.5" fill="#6B3E26"/>
+              <path d="M1 -11 q-6 11 0 22" stroke="#3B2A20" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            </g>
+          </defs>
+          <circle cx="200" cy="170" r="152" fill="#F3E3CC"/>
+          <g class="steam" stroke="#C9B49B" stroke-width="6" fill="none" stroke-linecap="round">
+            <path d="M252 138 q-12 -18 0 -36 q12 -18 0 -36"/>
+            <path d="M274 142 q-12 -18 0 -36 q12 -18 0 -36"/>
+          </g>
+          <path d="M20 296 C80 268 320 264 384 292 C402 330 362 352 200 352 C48 352 0 334 20 296Z" fill="#7A5236"/>
+          <path d="M44 320 C120 306 300 304 368 316 C372 340 330 348 200 348 C80 348 36 340 44 320Z" fill="#664330"/>
+          <ellipse cx="190" cy="292" rx="96" ry="18" fill="#3B2A20"/>
+          <g class="mole">
+            <path d="M114 294 Q108 168 190 158 Q272 168 266 294Z" fill="#5B4A42"/>
+            <ellipse cx="190" cy="224" rx="46" ry="36" fill="#6E5C53"/>
+            <circle cx="167" cy="204" r="5.5" fill="#1E1512"/>
+            <circle cx="213" cy="204" r="5.5" fill="#1E1512"/>
+            <circle cx="169" cy="202" r="1.6" fill="#fff"/>
+            <circle cx="215" cy="202" r="1.6" fill="#fff"/>
+            <ellipse cx="190" cy="228" rx="16" ry="12" fill="#E89A9A"/>
+            <ellipse cx="150" cy="234" rx="10" ry="6" fill="#E89A9A" opacity=".45"/>
+            <ellipse cx="230" cy="234" rx="10" ry="6" fill="#E89A9A" opacity=".45"/>
+            <path d="M180 248 q10 7 20 0" stroke="#3B2A20" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <g>
+              <rect x="232" y="146" width="58" height="62" rx="10" fill="#FFFDF8" stroke="#3B2A20" stroke-width="5"/>
+              <path d="M290 161 q22 0 22 18 q0 18 -22 18" fill="none" stroke="#3B2A20" stroke-width="5"/>
+              <ellipse cx="261" cy="152" rx="24" ry="5.5" fill="#6B3E26"/>
+              <path d="M246 178 h30" stroke="#C8643B" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <ellipse cx="246" cy="204" rx="16" ry="11" fill="#E89A9A"/>
+            <ellipse cx="128" cy="288" rx="19" ry="10" fill="#E89A9A"/>
+          </g>
+          <use href="#bean" transform="translate(60 300) rotate(-25)"/>
+          <use href="#bean" transform="translate(320 306) rotate(30)"/>
+          <use href="#bean" transform="translate(352 332) rotate(-10)"/>
+          <use href="#bean" transform="translate(84 330) rotate(40)"/>
+          <use href="#bean" transform="translate(300 340) rotate(-50)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Numbers ===== -->
+  <section class="numbers">
+    <div class="container numbers-grid">
+      <div class="num reveal"><span class="num-value" data-count="48">0</span><span class="num-unit">時間以内</span><p>焙煎してから発送まで</p></div>
+      <div class="num reveal"><span class="num-value" data-count="12">0</span><span class="num-unit">か国</span><p>取り扱っている産地</p></div>
+      <div class="num reveal"><span class="num-value" data-count="5">0</span><span class="num-unit">kg まで</span><p>1回に焼く量（少しずつ焼く）</p></div>
+    </div>
+    <p class="container note">※ 数字はすべてデモ用の架空のものです。</p>
+  </section>
+
+  <!-- ===== Concept ===== -->
+  <section class="section" id="concept">
+    <div class="container">
+      <p class="section-label">CONCEPT</p>
+      <h2 class="section-title">もぐらが大事にしている、3つのこと</h2>
+      <div class="cards-3">
+        <article class="card reveal">
+          <div class="card-icon">🔥</div>
+          <h3>少しずつ、毎日焼く</h3>
+          <p>1回の焙煎は5kgまで。注文の分だけ毎朝焼くので、倉庫で眠る豆がありません。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🚚</div>
+          <h3>焼いたら、すぐ送る</h3>
+          <p>焙煎から48時間以内に発送。届いた日から2週間がいちばんおいしい飲みごろです。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🌱</div>
+          <h3>袋は土に還す</h3>
+          <p>豆の袋は植物由来の素材。使い終わったら、庭やプランターの土に混ぜられます。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Beans ===== -->
+  <section class="section section-alt" id="beans">
+    <div class="container">
+      <p class="section-label">BEANS</p>
+      <h2 class="section-title">豆のラインナップ</h2>
+      <p class="section-lead">焙煎の深さで絞り込めます。グラフは酸味・苦味・コクの目安です。</p>
+      <div class="filter" role="tablist" aria-label="焙煎度で絞り込む">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">すべて</button>
+        <button class="filter-btn" data-filter="light" role="tab" aria-selected="false">浅煎り</button>
+        <button class="filter-btn" data-filter="medium" role="tab" aria-selected="false">中煎り</button>
+        <button class="filter-btn" data-filter="dark" role="tab" aria-selected="false">深煎り</button>
+      </div>
+      <div class="beans-grid" id="beans-grid"><!-- script.js で描画 --></div>
+    </div>
+  </section>
+
+  <!-- ===== Plan simulator ===== -->
+  <section class="section" id="plan">
+    <div class="container">
+      <p class="section-label">SUBSCRIPTION</p>
+      <h2 class="section-title">定期便の月額シミュレーター</h2>
+      <p class="section-lead">量と届く間隔を選ぶと、ひと月の金額がすぐに出ます。</p>
+      <div class="sim">
+        <form class="sim-form" id="sim-form">
+          <fieldset>
+            <legend>1回に届く量</legend>
+            <label class="chip"><input type="radio" name="amount" value="100"><span>100g<small>約10杯</small></span></label>
+            <label class="chip"><input type="radio" name="amount" value="200" checked><span>200g<small>約20杯</small></span></label>
+            <label class="chip"><input type="radio" name="amount" value="400"><span>400g<small>約40杯</small></span></label>
+          </fieldset>
+          <fieldset>
+            <legend>届く間隔</legend>
+            <label class="chip"><input type="radio" name="freq" value="4"><span>毎週<small>15%オフ</small></span></label>
+            <label class="chip"><input type="radio" name="freq" value="2" checked><span>2週間ごと<small>10%オフ</small></span></label>
+            <label class="chip"><input type="radio" name="freq" value="1"><span>毎月<small>通常価格</small></span></label>
+          </fieldset>
+          <fieldset>
+            <legend>挽き方</legend>
+            <label class="chip"><input type="radio" name="grind" value="bean" checked><span>豆のまま</span></label>
+            <label class="chip"><input type="radio" name="grind" value="drip"><span>ドリップ用</span></label>
+            <label class="chip"><input type="radio" name="grind" value="press"><span>フレンチプレス用</span></label>
+          </fieldset>
+        </form>
+        <div class="sim-result" aria-live="polite">
+          <p class="sim-label">ひと月の目安</p>
+          <p class="sim-price"><span id="sim-total">0</span><small>円（税込）</small></p>
+          <dl class="sim-detail">
+            <div><dt>1回あたり</dt><dd id="sim-each">-</dd></div>
+            <div><dt>送料</dt><dd id="sim-ship">-</dd></div>
+            <div><dt>1杯あたり</dt><dd id="sim-cup">-</dd></div>
+          </dl>
+          <p class="sim-summary" id="sim-summary"></p>
+          <button class="btn btn-block" type="button" id="sim-start">この内容ではじめる</button>
+          <p class="sim-note">月3,000円以上で送料無料。価格はすべて架空です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Flow ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-label">HOW IT WORKS</p>
+      <h2 class="section-title">届くまでの流れ</h2>
+      <ol class="flow">
+        <li class="reveal"><span class="flow-no">01</span><h3>プランを選ぶ</h3><p>量・間隔・挽き方を選んで申し込み。</p></li>
+        <li class="reveal"><span class="flow-no">02</span><h3>朝に焙煎</h3><p>発送日の前日の朝、地下の焙煎所で焼きます。</p></li>
+        <li class="reveal"><span class="flow-no">03</span><h3>ポストに届く</h3><p>ポストに入る薄い箱なので、留守でも受け取れます。</p></li>
+        <li class="reveal"><span class="flow-no">04</span><h3>いつでも変更</h3><p>豆の変更・お休み・解約は、次の発送の5日前まで。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== News ===== -->
+  <section class="section" id="news">
+    <div class="container narrow">
+      <p class="section-label">NEWS</p>
+      <h2 class="section-title">お知らせ</h2>
+      <ul class="news">
+        <li><time datetime="2026-10-13">2026.10.13</time><span class="tag">お知らせ</span><p>デモサイトを公開しました（Claude Code で作成）。</p></li>
+        <li><time datetime="2026-10-01">2026.10.01</time><span class="tag tag-new">新商品</span><p>秋限定「落ち葉ブレンド」の予約受付を始めました。</p></li>
+        <li><time datetime="2026-09-20">2026.09.20</time><span class="tag">お知らせ</span><p>焙煎機を1台増やしました。発送までがさらに早くなります。</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section-alt" id="faq">
+    <div class="container narrow">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">よくある質問</h2>
+      <div class="faq">
+        <details>
+          <summary>定期便はいつでも止められますか？</summary>
+          <p>はい。次の発送の5日前までなら、お休みも解約もマイページから何度でもできます（という設定です）。</p>
+        </details>
+        <details>
+          <summary>途中で豆の種類を変えられますか？</summary>
+          <p>毎回変えられます。おまかせにすると、焙煎士がその月おいしい豆を選んでお届けします。</p>
+        </details>
+        <details>
+          <summary>留守がちでも受け取れますか？</summary>
+          <p>400g までは厚さ3cmの箱に入るので、ポストに届きます。対面での受け取りは要りません。</p>
+        </details>
+        <details>
+          <summary>豆はどう保存すればいいですか？</summary>
+          <p>袋のジッパーを閉めて、日の当たらない涼しい場所へ。2週間以上置くなら冷凍がおすすめです。</p>
+        </details>
+        <details>
+          <summary>ギフトにできますか？</summary>
+          <p>できます。3か月・6か月のギフト定期便をご用意しています（もちろん架空です）。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Shop & contact ===== -->
+  <section class="section" id="shop">
+    <div class="container shop">
+      <div class="shop-info">
+        <p class="section-label">SHOP</p>
+        <h2 class="section-title">地下1階の焙煎所</h2>
+        <p>土日だけ、焙煎所の入口で豆を量り売りしています。階段を降りると、焙煎機の音と香りがお出迎え。</p>
+        <dl class="shop-dl">
+          <div><dt>住所</dt><dd>架空県もぐら市あなぐら町1-2-3 B1F</dd></div>
+          <div><dt>店頭販売</dt><dd>土・日 10:00〜17:00</dd></div>
+          <div><dt>運営</dt><dd>株式会社もぐら商店（架空）</dd></div>
+        </dl>
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 320 180">
+            <rect width="320" height="180" rx="14" fill="#EFE4D2"/>
+            <path d="M0 120 H320" stroke="#fff" stroke-width="14"/>
+            <path d="M200 0 V180" stroke="#fff" stroke-width="12"/>
+            <path d="M0 40 Q120 70 320 30" stroke="#fff" stroke-width="8" fill="none"/>
+            <rect x="40" y="132" width="60" height="34" rx="4" fill="#D9C7AE"/>
+            <rect x="220" y="60" width="70" height="42" rx="4" fill="#D9C7AE"/>
+            <text x="250" y="150" font-size="11" fill="#7A5236" text-anchor="middle">もぐら駅</text>
+            <circle cx="150" cy="96" r="13" fill="#C8643B"/>
+            <circle cx="150" cy="96" r="5" fill="#fff"/>
+            <text x="150" y="76" font-size="12" font-weight="700" fill="#3B2A20" text-anchor="middle">ココ（の地下）</text>
+          </svg>
+        </div>
+      </div>
+      <div class="contact">
+        <h3>お問い合わせ</h3>
+        <p class="contact-note">デモサイトのため、入力しても<strong>どこにも送信されません</strong>。本当の連絡先・個人情報は入れないでください。</p>
+        <form id="contact-form" novalidate>
+          <label>お名前<input type="text" name="name" placeholder="もぐら 太郎" autocomplete="off"></label>
+          <label>ご用件
+            <select name="topic">
+              <option>定期便について</option>
+              <option>ギフトについて</option>
+              <option>お店について</option>
+              <option>その他</option>
+            </select>
+          </label>
+          <label>内容<textarea name="body" rows="4" placeholder="おすすめの浅煎りを教えてください"></textarea></label>
+          <button class="btn btn-block" type="submit">送信してみる（送られません）</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo">もぐら珈琲研究所</p>
+    <p class="footer-disclaimer">このサイトは Claude Code のデモンストレーションとして作った架空のお店です。会社名・住所・商品・価格・数字はすべて架空で、実在のものとは関係ありません。</p>
+    <p class="footer-made">Made with Claude Code ・ <a href="https://github.com/nc16152/mogura-coffee-lab">ソースコードを見る</a></p>
+    <p class="footer-copy">© <span id="year">2026</span> 株式会社もぐら商店（架空）</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
